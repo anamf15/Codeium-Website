@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sephora</title>
+  <style>
+    /* CSS styles for the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f8f8f8;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .product {
+      width: calc(33.33% - 10px);
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product:hover .description {
+      opacity: 1;
+    }
+
+    .description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .shop-now {
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .shop-now a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .subscription-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .subscription-form input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .subscription-form input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Brands</a>
+      <a href="#">Offers</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="product">
+      <img src="product1.jpg" alt="Product 1">
+      <div class="description">
+        <p>Product 1</p>
+      </div>
+      <div class="shop-now">
+        <a href="#">Shop Now</a>
+      </div>
+    </div>
+    <div class="product">
+      <img src="product2.jpg" alt="Product 2">
+      <div class="description">
+        <p>Product 2</p>
+      </div>
+      <div class="shop-now">
+        <a href="#">Shop Now</a>
+      </div>
+    </div>
+    <div class="product">
+      <img src="product3.jpg" alt="Product 3">
+      <div class="description">
+        <p>Product 3</p>
+      </div>
+      <div class="shop-now">
+        <a href="#">Shop Now</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="subscription-form">
+      <form>
+        <input type="email" placeholder="Enter your email">
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+    <p>&copy; 2021 Sephora. All rights reserved.</p>
+    <div>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+</body>
+</html>
